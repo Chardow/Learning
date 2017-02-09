@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	 function isInteger(x) {
+        return x % 1 === 0;
+    }
+</script>
+	<title>Task #1</title>
+</head>
+<body>
+<script type="text/javascript">
+	var coins = new Array();
+	var gold = 0;
+	var silver = 0;
+	var bronze = 0;
+	var sum = 0;
+	var userInput = prompt("Insert type and value: ");
+	while(userInput!=null){
+		if(userInput.substring(0,5)=="coin "){
+			userInput=userInput.substring(5);
+			if (isInteger(userInput)){
+			coins.push(parseInt(userInput, 10));
+		}
+		}
+		
+		var userInput = prompt("Insert type and value: ");
+	}
+	for(i = 0; i<coins.length;i++){
+		sum+=coins[i];
+	}
+	gold = Math.floor(sum/100)%10;
+	silver = Math.floor(sum/10)%10;
+	bronze = Math.floor(sum/1)%10;
+	document.write("gold: " + gold +
+				   "<br />silver: " + silver +
+				   "<br />bronze: "+bronze);
+</script>
+</body>
+</html>
