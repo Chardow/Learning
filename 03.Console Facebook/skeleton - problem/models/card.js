@@ -9,7 +9,7 @@ this._column;
 		this._name = cardName;
 	}
 	this.setColumn = function(columnIndex){
-		this._column=columnIndex;
+		this._column=parseInt(columnIndex);
 	}
 	
 	this.getColumn = function(){
