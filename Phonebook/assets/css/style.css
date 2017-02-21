@@ -1,0 +1,23 @@
+body{
+	background-color:#ffff99;
+}
+#conteiner{
+	position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+	width:600px;
+	background-color:#ccff99;
+}
+.inputField{
+	float:left;
+	width: 80%;
+}
+#addContactForm #addContact{
+	float: left;
+	background-color: red;
+	color:#000;
+	font-weight: bold;
+	border:2px solid #2d2d2d;
+}
